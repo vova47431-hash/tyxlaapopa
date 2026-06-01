@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@TYXLAAPOPA | Profile</title>
+    <!-- Подключаем иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Общие настройки */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            /* Темный красно-черно-серый живой градиент */
+            background: linear-gradient(-45deg, #000000, #1a1a1a, #4a0000, #2b2b2b);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Анимация фона */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Темная стеклянная карточка */
+        .glass-card {
+            background: rgba(0, 0, 0, 0.6); /* Темный полупрозрачный фон */
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 0, 0, 0.3); /* Тонкая красная рамка */
+            border-radius: 30px;
+            padding: 40px 30px;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 0, 0, 0.1);
+            color: white;
+        }
+
+        /* Аватарка с красным свечением */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #ff0000; /* Красная рамка вокруг фото */
+            margin-bottom: 15px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+        .profile-img:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .bio {
+            font-size: 14px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+            line-height: 1.5;
+            color: #cccccc;
+        }
+
+        /* Контейнер для ссылок */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Стили кнопок-ссылок */
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05); /* Почти прозрачный серый */
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .link-item i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        /* Эффект при наведении: красное свечение и подъем */
+        .link-item:hover {
+            background: rgba(255, 0, 0, 0.2);
+            transform: translateY(-3px);
+            border-color: #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+            color: #ffcccc;
+        }
+
+        /* Индивидуальные цвета иконок при наведении (опционально) */
+        .discord-link:hover i { color: #5865F2; }
+        .tg-link:hover i { color: #229ED9; }
+        .vk-link:hover i { color: #0077FF; }
+        .yt-link:hover i { color: #FF0000; }
+
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <!-- Твоё фото -->
+        <img src="https://cdn.discordapp.com/avatars/1063815765419114546/archived/1501628513139163206/ae96cea644791bb169ec81d8e9916913.webp?size=1024" alt="Profile" class="profile-img">
+        
+        <h1>@TYXLAAPOPA</h1>
+        <p class="bio">Привет! Я занимаюсь разработкой и создаю крутые штуки. Мои контакты ниже 👇</p>
+
+        <div class="links-container">
+            <!-- ССЫЛКА НА ДИСКОРД -->
+            <a href="https://discord.gg/VXFjVpHXMB" target="_blank" class="link-item discord-link">
+                <i class="fa-brands fa-discord"></i> Discord
+            </a>
+
+            <!-- ССЫЛКА НА ТЕЛЕГРАМ -->
+            <a href="https://t.me/XDfhka" target="_blank" class="link-item tg-link">
+                <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+
+            <!-- ССЫЛКА НА VK -->
+            <a href="https://vk.com/id839468554" target="_blank" class="link-item vk-link">
+                <i class="fa-brands fa-vk"></i> ВКонтакте
+            </a>
+
+            <!-- ССЫЛКА НА YOUTUBE -->
+            <a href="https://www.youtube.com/@SigmaStudio-52" target="_blank" class="link-item yt-link">
+                <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
